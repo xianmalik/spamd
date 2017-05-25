@@ -1,0 +1,54 @@
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+#Slider.home {
+    background-position-x: 55% !important; }
+#Slider.about {
+    background-position-x: 37% !important; }
+#Slider.service {
+    background-position-x: 38% !important; }
+    #Slider {
+        height: calc(100vh - 70px);
+        margin-top: 70px;
+        padding-bottom: 15px;
+        align-items: flex-end; }
+        #Slider .container {
+            width: 100%; }
+        #Slider h1 {
+            color: #333; }
+.navbar-header {
+    height: 70px; }
+    .navbar-toggle {
+        margin: 19px;
+        border: 0px;
+        background: none !important; }
+    .navbar-collapse {
+        z-index: 999999999;
+        background: #FFF; }
+        .navbar-nav li a {
+            line-height: 4em;
+            height: 4em; }
+#Face,
+#Body,
+#Beauty,
+#Medical2 {
+    padding: 0 !important;
+    background: none; }
+    .hidden-b {
+        display: block; }
+article::before, article::after { display: none; }
+footer div,
+footer ul {
+    float: none;
+    text-align: left !important;
+}
+footer .footer-top > div    { padding: 0 0 30px 30px; }
+footer .footer-bottom > div { padding: 0 0 0 30px; }
+footer .footer-top ul li {
+    text-align: left;
+    float: left;
+    width: 50%; }
+footer {
+    padding-top: 50px; }

@@ -2,10 +2,10 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     color: #526371; }
-body * {
-    font-family: 'Hind', sans-serif;
-}
+    body * {
+        font-family: 'Hind', sans-serif; }
 div { position: relative; }
+.hidden-b { display: none; }
 .page-wrap { display: table; }
 .white { color: #FFF !important; }
 .theme-color { color: #00E7E7 !important; }
@@ -58,6 +58,8 @@ img.section-icon { margin-bottom: 20px; }
     width: 100%;
     border: 0px;
     margin: 0; }
+    .navbar-brand {
+        padding: 30px; }
 #Slider {
     background-size: cover !important;
     height: calc(100vh - 100px);
@@ -126,11 +128,12 @@ article p {
 #Testimonial .line-under::before { background: #FFF; }
 .testimonial {
     background: #FFF;
-    padding: 15% 10% 10%;
+    margin-bottom: 20px;
+    padding: 30px 30px 10%;
     text-align: center; }
     .testi-avatar,
     .testi-star {
-        margin: 20px 0; }
+        margin: 0 auto 20px !important; }
     .testimonial img {
         display: block;
         margin: auto; }
@@ -142,7 +145,7 @@ article p {
 .team-single {
     background: #FFF;
     margin-bottom: 30px;
-    padding: 30px 5%; }
+    padding: 20px 20px 30px; }
     .team-single .team-avatar {
         margin: 0 auto 20px; }
     .team-single ul {
@@ -167,10 +170,11 @@ article p {
             content: url('img/splash-3.png'); }
 
 .before-after {
+    margin-top: 30px;
     display: table;
     overflow: auto;
     position: relative; }
-        .after {
+        .before {
             position: absolute;
             top: 0;
             overflow: hidden; }
