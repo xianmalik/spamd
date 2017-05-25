@@ -24,7 +24,7 @@ h6 { font-size: 24px; }
 p  { font-size: 18px; line-height: 1.67em; }
 img { max-width: 100%; }
 img.scale-with-grid { width: 100%; }
-section { padding: 100px 0; background-size: cover !important; }
+section { padding: 100px 0; background-size: cover !important; background-position: center !important; }
 img.section-icon { margin-bottom: 20px; }
 .line-under { margin-bottom: .75em; }
 .line-under:before {
