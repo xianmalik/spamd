@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Service | Spa MD</title>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="page-wrap">
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.php"><img src="img/logo.png"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="face.php">Face</a></li>
+                            <li><a href="beauty.php">Beauty</a></li>
+                            <li><a href="body.php">Body</a></li>
+                            <li><a href="medical.php">Medical</a></li>
+                            <li><a href="blog.php">Blog</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="Slider" class="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-right">
+                            <h5 class="theme-color no-margin">
+                                Laser Services
+                            </h5>
+                            <h1 class="normal no-margin">Laser Services</h1>
+                            <a href="#" class="button-sq">MAKE AN APPOINTMENT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <h2 class="line-under splash splash-1">What is a photofacial?</h2>
+                            <p style="font-size: 30px;">Lumecca - IPL (Intense Pulsed Light) or “Photofacial”</p>
+                            <p>
+                                Lumecca is a short procedure in which IPL or “Intense Pulsed Light” is used to penetrate deep into the skin.
+                                This light causes blood vessels and collagen underneath the epidermis (top layer of skin) to constrict.
+                            </p>
+                            <img src="img/seperator.png">
+                        </div>
+                        <div class="col-md-10 col-md-offset-1 text-right" style="margin-top: 10em;">
+                            <h2 class="line-under splash splash-2">What Is skin resurfacing?</h2>
+                            <p style="font-size: 30px;">Fractora - Skin Resurfacing</p>
+                            <p>
+                                Fractora delivers RF energy to the skin through pins that produce localized heat that leave small lesion dots
+                                on the treatment area. This gentle process promotes collagen restructuring for skin rejuvenation and
+                                improved appearance of the skin itself.
+                            </p>
+                            <img src="img/seperator.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Difference">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="line-under line-under-center">The SpaMD Difference</h2>
+                            <p>
+                                Our clinical staff will start with a consultation to make sure that we understand your goals and always keep
+                                <br>them in mind. We will decide the right treatment options together. Once we decide the best rout our technicians
+                                <br>administer photofacial’s and skin resurfacing work by emitting energy deep into the surface of the skin over
+                                <br>targeted areas using the latest laser technology. This helps your skins natural collagen production. It can also destroy
+                                <br>melanin that causes age spots, help with uneven skin tone, fine lines, sun spots, pigmentation irregularities, deep lines,
+                                <br>texture and normal signs of aging. It’s consistent that patients are euphoric with the results of both photofacials  and skin
+                                <br>resurfacing. You will notice that your skin has a lighter healthier appearance within the first month, you will fall in love
+                                <br>with your new skin. We can’t wait to let that inner beauty shine! Contact us today for a free consultation;
+                                <br>you won’t believe the difference these services can make. We can’t wait to see you in for a free consultation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="BeforeAfter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="line-under">What are the Benefits of both?</h2>
+                            <p style="font-size: 30px;">
+                                Lumecca IPL
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> The benefits of Photo facials far outweigh the risks (extremely minimal)
+                                and cover almost the entire spectrum of cosmetic dermatology.
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> The treatment can eradicate sun spots or other pigmentation irregularities.
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> The treatment can combat acne problems and eliminate large pores.
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> IPL is excellent at treating rosacea and helps diffuse redness.
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> IPL has also been known to help with skin texture.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="before-after">
+                                <div class="before">
+                                    <img src="img/ba1.jpg">
+                                </div>
+                                <div class="after">
+                                    <img src="img/ba1a.jpg">
+                                </div>
+                                <div class="ba-slider">
+                                    <img src="img/ba-slider.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p style="font-size: 30px;">
+                                Fractora – Skin Resurfacing
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> The benefits of Skin Resurfacing can be profound
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> Improvements in fine lines, deep lines, texture, pigment irregularities, blood vessels and redness
+                            </p>
+                            <p>
+                                <img src="img/li-point.png"> Improvements for aging skin that would normally require multiple technologies
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="before-after">
+                                <div class="before">
+                                    <img src="img/ba2.jpg">
+                                </div>
+                                <div class="after">
+                                    <img src="img/ba2a.jpg">
+                                </div>
+                                <div class="ba-slider">
+                                    <img src="img/ba-slider.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6">
+                            <form class="contact-form" action="" method="post">
+                                <h6 class="text-center">Schedule a free consultation</h6>
+                                <div class="col-md-6">
+                                    <input type="text" name="f-firstname" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="f-lastname" placeholder="Last Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="f-email" placeholder="Email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" name="f-phone" placeholder="Phone">
+                                </div>
+                                <div class="col-md-12">
+                                    <select name="f-location">
+                                        <option value="" disabled selected>Select Prefered Location</option>
+                                        <option value="">Option One</option>
+                                        <option value="">Option Two</option>
+                                        <option value="">Option Three</option>
+                                    </select>
+                                    <textarea name="f-message" placeholder="How we can help you? Tell us here..." rows="4"></textarea>
+                                </div>
+                                <div class="col-md-6 col-md-push-3">
+                                    <input type="submit" name="f-submit" value="SUBMIT">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row footer-top">
+                    <div class="col-md-6 footer-left">
+                        <img src="img/logo.png">
+                    </div>
+                    <ul class="col-md-6 text-right">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="face.php">Face</a></li>
+                        <li><a href="beauty.php">Beauty</a></li>
+                        <li><a href="body.php">Body</a></li>
+                        <li><a href="medical.php">Medical</a></li>
+                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="row footer-bottom">
+                    <div class="col-md-6 footer-left">
+                        <p class="copyright">All right reserved, Spa Md Copyright 2017</p>
+                    </div>
+                    <ul class="col-md-6 text-right">
+                        <li><a href="#"><img src="img/instagram.png"></a></li>
+                        <li><a href="#"><img src="img/twitter.png"></a></li>
+                        <li><a href="#"><img src="img/facebook.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/responsive.css" media="(max-width: 768px)">
+
+    <!-- JScripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
