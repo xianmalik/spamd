@@ -51,7 +51,7 @@
                                 About
                             </h5>
                             <h1 class="normal no-margin">Spa MD</h1>
-                            <a href="#" class="button-sq">MAKE AN APPOINTMENT</a>
+                            <a href="#" class="button-sq">SCHEDULE A CONSULTATION</a>
                         </div>
                     </div>
                 </div>
