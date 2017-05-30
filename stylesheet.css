@@ -10,6 +10,12 @@ div { position: relative; }
 .white { color: #FFF !important; }
 .theme-color { color: #00E7E7 !important; }
 .no-margin { margin: 0; }
+button {
+    background: transparent;
+    border: 0px;
+    outline: none !important;
+    padding: 0px;
+    margin: 0px; }
 a,
 a:hover,
 a:focus,
@@ -63,6 +69,11 @@ img.section-icon { margin-bottom: 20px; }
     margin: 0; }
     .navbar-brand {
         padding: 30px; }
+
+    ul.dropdown-menu li a {
+        padding: 0 2em;
+        height: auto;
+        line-height: 3em; }
 #Slider {
     background-size: cover !important;
     height: calc(100vh - 100px);
@@ -117,7 +128,6 @@ article p {
 #Testimonial         { background: url('img/reimagined-bg.png'); }
 #Team                { background: url('img/team-bg.jpg'); }
 #Contact             { background: url('img/contact-bg.jpg'); }
-#Difference          { background: url('img/difference-bg.jpg'); }
 #Medical             { background: url('img/bg-1.png'); }
 #Face                { background: url('img/bg-2.png'); }
 #Body                { background: url('img/bg-3.jpg'); padding: 350px 0; }
@@ -171,7 +181,12 @@ article p {
             content: url('img/splash-2.png'); }
         .splash.splash-3::after {
             content: url('img/splash-3.png'); }
-
+.cocoen {
+    margin-bottom: 30px !important; }
+    .cocoen-drag::before {
+    width: 30px !important;
+    margin-left: -15px !important;
+    border-radius: 100% !important; }
 .before-after {
     margin-top: 30px;
     display: table;
