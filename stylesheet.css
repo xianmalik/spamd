@@ -61,12 +61,19 @@ img.section-icon { margin-bottom: 20px; }
     padding-top: 0; }
 .navbar-default {
     background-color: #FFFFFF;
-    position: absolute;
+    position: fixed;
     top: 0;
-    margin: auto;
     width: 100%;
     border: 0px;
-    margin: 0; }
+    margin: 0;
+    z-index: 9999; }
+    .navbar-default .container {
+        opacity: 0;
+        transform: translateY(100px); }
+        body.loaded .navbar-default .container {
+            transition: all 1s .5s cubic-bezier(0, 1, 1, 1);
+            opacity: 1;
+            transform: none; }
     .navbar-brand {
         padding: 30px; }
 
@@ -127,12 +134,12 @@ article p {
     background: #FFFFFF; }
 #Testimonial         { background: url('img/reimagined-bg.png'); }
 #Team                { background: url('img/team-bg.jpg'); }
-#Contact             { background: url('img/contact-bg.jpg'); }
+#Contact             { background: #ededed; }
 #Medical             { background: url('img/bg-1.png'); }
-#Face                { background: url('img/bg-2.png'); }
+#Face                { background: url('img/bg-2.jpg'); background-position: bottom !important; }
 #Body                { background: url('img/bg-3.jpg'); padding: 350px 0; }
 #Beauty              { background: url('img/bg-4.jpg'); padding: 200px 0; }
-#Medical2            { background: url('img/bg-5.jpg'); }
+#Medical2            { background: url('img/bg-5.jpg') no-repeat; }
 #Difference p {
     color: #808080; }
 #Testimonial h2 {
@@ -167,8 +174,10 @@ article p {
         .team-single ul li {
             display: inline-block; }
             .team-single ul li a {
-                padding: 10px; }
-.splash::after {
+                padding: 10px 5px; }
+                .team-single ul li a img {
+                    width: 25px; }
+/*.splash::after {
     position: absolute;
     top: -1.5em;
     left: -1.5em; }
@@ -180,7 +189,7 @@ article p {
         .splash.splash-2::after {
             content: url('img/splash-2.png'); }
         .splash.splash-3::after {
-            content: url('img/splash-3.png'); }
+            content: url('img/splash-3.png'); }*/
 .cocoen {
     margin-bottom: 30px !important; }
     .cocoen-drag::before {
@@ -241,6 +250,8 @@ form input[type="submit"] {
     letter-spacing: .06em;
 }
 
+footer {
+    padding-top: 20px; }
 footer ul li {
     display: inline-block; }
     footer ul li a {

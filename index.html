@@ -13,8 +13,33 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style media="screen">
+    .loader {
+        z-index: 9999999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        pointer-events: none; }
+        .loader .circle {
+            height: 30px;
+            width: 30px;
+            border: 3px solid #7befef;
+            border-top-color: #26bfbf;
+            border-radius: 100%;
+            margin: auto;
+            opacity: .7;
+            animation: spin .3s infinite linear; }
+            @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
 </head>
 <body>
+    <div class="loader">
+        <div class="circle"></div>
+    </div>
     <div class="page-wrap">
         <header>
             <nav class="navbar navbar-default">
@@ -35,22 +60,21 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="service-botox.html">Botox</a></li>
-                                    <li><a href="service-chemical-peels.html">Chemical Peels</a></li>
-                                    <li><a href="service-dermal-fillers.html">Dermal Fillers</a></li>
-                                    <li><a href="service-dermaplaning.html">Dermaplaning</a></li>
-                                    <li><a href="service-eyelash-extensions.html">Eyerlash Extensions</a></li>
-                                    <li><a href="service-kybella.html">Kybella</a></li>
-                                    <li><a href="service-laser-hair-removal.html">Laser Hair Removal</a></li>
-                                    <li><a href="service-makeup.html">Makeup</a></li>
-                                    <li><a href="service-microdermabrasion.html">Microdermabrasion</a></li>
-                                    <li><a href="service-microneedling.html">Microneedling</a></li>
                                     <li><a href="service-photofacial.html">Photofacial</a></li>
                                     <li><a href="service-skin-resurfacing.html">Skin Resurfacing</a></li>
+                                    <li><a href="service-laser-hair-removal.html">Laser Hair Removal</a></li>
+                                    <li><a href="service-microneedling.html">Microneedling</a></li>
+                                    <li><a href="service-dermaplaning.html">Dermaplaning</a></li>
+                                    <li><a href="service-microdermabrasion.html">Microdermabrasion</a></li>
+                                    <li><a href="service-dermasound-elite.html">DermaSound Elite</a></li>
+                                    <li><a href="service-makeup.html">Makeup</a></li>
+                                    <li><a href="service-dermal-fillers.html">Dermal Fillers</a></li>
+                                    <li><a href="service-chemical-peels.html">Chemical Peels</a></li>
+                                    <li><a href="service-kybella.html">Kybella</a></li>
                                 </ul>
                             </li>
                             <li><a href="blog.php">Blog</a></li>
-                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -105,49 +129,55 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-push-6">
-                            <article class="accord">
-                                <h6>Laser Services</h6>
-                                <p>
-                                    Photofacials, Skin Resurfacing, and Laser Hair Removal will rid your face and body of unwanted hair and signs of aging
-                                </p>
-                            </article>
                             <button data-toggle="collapse" data-target="#laser-1">
-                                <article class="accord">
+                                <article class="accord text-left">
                                     <h3>Laser Services</h3>
                                     <p>
                                         Photofacials, Skin Resurfacing, and Laser Hair Removal will rid your face and body of unwanted hair and signs of aging
                                     </p>
                                 </article>
                             </button>
-                            <div class="accord collapse" id="laser-1">
-                                <article class="accord">
-                                    <h3>Photofacial</h3>
-                                </article>
-                                <article class="accord">
-                                    <h3>Skin Resurfacing</h3>
-                                </article>
-                                <article class="accord">
-                                    <h3>Laser Hair Removal</h3>
-                                </article>
+                            <div class="collapse" id="laser-1">
+                                <a href="service-photofacial.html">
+                                    <article class="accord">
+                                        <h3>Photofacial</h3>
+                                    </article>
+                                </a>
+                                <a href="service-skin-resurfacing.html">
+                                    <article class="accord">
+                                        <h3>Skin Resurfacing</h3>
+                                    </article>
+                                </a>
+                                <a href="service-laser-hair-removal.html">
+                                    <article class="accord">
+                                        <h3>Laser Hair Removal</h3>
+                                    </article>
+                                </a>
                             </div>
-                            <article class="accord">
-                                <h6>Microneedling</h6>
-                                <p>
-                                    A minimally invasive procedure that results in a smooth skin texture as well as reduction in pour size, stretch marks and scars.
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h6>DermaPlaning</h6>
-                                <p>
-                                    A method of exfoliation that using a 10 gauge scalpel to gently scrape off the top layer of dead skin cells in order to reveal a smoother, brighter complexion.
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h6>Microdermabrasion</h6>
-                                <p>
-                                    Is a non-chemical, noninvasive procedure that uses microcrystals to remove the outermost layer of dead skin cells revealing younger looking skin
-                                </p>
-                            </article>
+                            <a href="service-microneedling.html">
+                                <article class="accord">
+                                    <h6>Microneedling</h6>
+                                    <p>
+                                        A minimally invasive procedure that results in a smooth skin texture as well as reduction in pour size, stretch marks and scars.
+                                    </p>
+                                </article>
+                            </a>
+                            <a href="service-dermaplaning.html">
+                                <article class="accord">
+                                    <h6>DermaPlaning</h6>
+                                    <p>
+                                        A method of exfoliation that using a 10 gauge scalpel to gently scrape off the top layer of dead skin cells in order to reveal a smoother, brighter complexion.
+                                    </p>
+                                </article>
+                            </a>
+                            <a href="service-microdermabrasion.html">
+                                <article class="accord">
+                                    <h6>Microdermabrasion</h6>
+                                    <p>
+                                        Is a non-chemical, noninvasive procedure that uses microcrystals to remove the outermost layer of dead skin cells revealing younger looking skin
+                                    </p>
+                                </article>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -159,7 +189,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <button data-toggle="collapse" data-target="#laser-2">
-                                <article class="accord">
+                                <article class="accord text-left">
                                     <h3>Laser Services</h3>
                                     <p>
                                         Photofacials, Skin Resurfacing, and Laser Hair Removal will rid your face and body of unwanted hair and signs of aging
@@ -167,15 +197,21 @@
                                 </article>
                             </button>
                             <div class="collapse" id="laser-2">
-                                <article class="accord">
-                                    <h3>Photofacial</h3>
-                                </article>
-                                <article class="accord">
-                                    <h3>Skin Resurfacing</h3>
-                                </article>
-                                <article class="accord">
-                                    <h3>Laser Hair Removal</h3>
-                                </article>
+                                <a href="service-photofacial.html">
+                                    <article class="accord">
+                                        <h3>Photofacial</h3>
+                                    </article>
+                                </a>
+                                <a href="service-skin-resurfacing.html">
+                                    <article class="accord">
+                                        <h3>Skin Resurfacing</h3>
+                                    </article>
+                                </a>
+                                <a href="service-laser-hair-removal.html">
+                                    <article class="accord">
+                                        <h3>Laser Hair Removal</h3>
+                                    </article>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -187,37 +223,25 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-push-5">
-                            <article class="accord">
-                                <h3>Photofacials </h3>
-                                <p>
-                                    Our photofacials can help with sun spots, pigmentation
-                                    irregularities, eliminate large pores, help with acne,
-                                    and overall reduce signs of aging
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h3>Eyelash Extensions</h3>
-                                <p>
-                                    Our Lash Savvy lashes will leave your eyes looking big,
-                                    beautiful, and bold. We also offer waxing and shaping
-                                    leaving your eyes with envious volume.
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h3>Make-Up </h3>
-                                <p>
-                                    Our retail products include: Latisse, Obagi, Jane Iredale and
-                                    Glymed. Your skin only deserves the best. <br><br>
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h3>Photofacials </h3>
-                                <p>
-                                    Our photofacials can help with sun spots, pigmentation
-                                    irregularities, eliminate large pores, help with acne,
-                                    and overall reduce signs of aging
-                                </p>
-                            </article>
+                            <a href="service-photofacial.html">
+                                <article class="accord">
+                                    <h3>DermaSound Elite</h3>
+                                    <p>
+                                        Our photofacials can help with sun spots, pigmentation
+                                        irregularities, eliminate large pores, help with acne,
+                                        and overall reduce signs of aging
+                                    </p>
+                                </article>
+                            </a>
+                            <a href="service-makeup.html">
+                                <article class="accord">
+                                    <h3>Make-Up </h3>
+                                    <p>
+                                        Our retail products include: Latisse, Obagi, Jane Iredale and
+                                        Glymed. Your skin only deserves the best. <br><br>
+                                    </p>
+                                </article>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -228,46 +252,46 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7">
-                            <article class="accord">
-                                <h3>Injectables</h3>
-                                <p>
-                                    Utilizing various injectables we will be able to visiablly
-                                    reduce frown lines and crows feet from aging. You will notice
-                                    results within days that last months.
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h3>Dermal Fillers</h3>
-                                <p>
-                                    Using our various dermal fillers we can visibly reduce acne
-                                    scars, plump your lips, and overall rejuvenate your appearance
-                                    to a healthier younger looking you.
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h3>Chemical Peals</h3>
-                                <p>
-                                    Chemical Peels are a great way to defy aging, lighten brown spots,
-                                    soften wrinkles, stimulate collagen and clear up acne. Spa MD has
-                                    the largest selection of GlyMed chemical peels available.
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h3>Kybella</h3>
-                                <p>
-                                    Kybella is an injectable solution aimed at reducing an acess
-                                    of fat below the chin. Kybella will systematically improve the
-                                    profile of your face, while making you look and feel younger.
-                                </p>
-                            </article>
-                            <article class="accord">
-                                <h3>Neurotoxins (Botox)</h3>
-                                <p>
-                                    Utilizing our various injectables you will be able to visibly
-                                    reduce frown lines, crow’s feet, and signs of aging. You will
-                                    notice results within days, that last months.
-                                </p>
-                            </article>
+                            <a href="service-injectables.html">
+                                <article class="accord">
+                                    <h3>Injectables</h3>
+                                    <p>
+                                        Utilizing various injectables we will be able to visiablly
+                                        reduce frown lines and crows feet from aging. You will notice
+                                        results within days that last months.
+                                    </p>
+                                </article>
+                            </a>
+                            <a href="service-dermal-fillers.html">
+                                <article class="accord">
+                                    <h3>Dermal Fillers</h3>
+                                    <p>
+                                        Using our various dermal fillers we can visibly reduce acne
+                                        scars, plump your lips, and overall rejuvenate your appearance
+                                        to a healthier younger looking you.
+                                    </p>
+                                </article>
+                            </a>
+                            <a href="service-chemical-peels.html">
+                                <article class="accord">
+                                    <h3>Chemical Peels</h3>
+                                    <p>
+                                        Chemical Peels are a great way to defy aging, lighten brown spots,
+                                        soften wrinkles, stimulate collagen and clear up acne. Spa MD has
+                                        the largest selection of GlyMed chemical peels available.
+                                    </p>
+                                </article>
+                            </a>
+                            <a href="service-kybella.html">
+                                <article class="accord">
+                                    <h3>Kybella</h3>
+                                    <p>
+                                        Kybella is an injectable solution aimed at reducing an acess
+                                        of fat below the chin. Kybella will systematically improve the
+                                        profile of your face, while making you look and feel younger.
+                                    </p>
+                                </article>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -277,7 +301,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <img src="img/icon-2.png" class="section-icon">
+                            <img src="img/icon-2.png" class="section-icon" style="filter: brightness(0) invert(1);">
                             <h2 class="line-under line-under-center">A Medical Spa Re-Imagined</h2>
                         </div>
                         <div class="col-md-4">
@@ -321,7 +345,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-
+                            <div id="map" style="width: 100%; height: 400px">maps error</div>
                         </div>
                         <div class="col-md-6">
                             <form class="contact-form" action="" method="post">
@@ -364,14 +388,11 @@
                         <img src="img/logo.png">
                     </div>
                     <ul class="col-md-6 text-right">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="face.php">Face</a></li>
-                        <li><a href="beauty.php">Beauty</a></li>
-                        <li><a href="body.php">Body</a></li>
-                        <li><a href="medical.php">Medical</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Services</a></li>
                         <li><a href="blog.php">Blog</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="row footer-bottom">
@@ -379,9 +400,9 @@
                         <p class="copyright">All right reserved, Spa Md Copyright 2017</p>
                     </div>
                     <ul class="col-md-6 text-right">
-                        <li><a href="#"><img src="img/instagram.png"></a></li>
-                        <li><a href="#"><img src="img/twitter.png"></a></li>
-                        <li><a href="#"><img src="img/facebook.png"></a></li>
+                        <li><a href="https://twitter.com/SpaMDConsultant"><img src="img/twitter.png"></a></li>
+                        <li><a href="https://www.pinterest.com/spaconsultantsmd/"><img src="img/pinterest.png"></a></li>
+                        <li><a href="https://www.facebook.com/spaconsultantsmd/?ref=bookmarks"><img src="img/facebook.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -400,6 +421,7 @@
 
     <!-- JScripts -->
     <script src="js/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk80Gxfm4MzzpMlQCFkyo6LILac9_9zYI&callback=initMap" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
 </body>

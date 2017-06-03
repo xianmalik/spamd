@@ -2,7 +2,15 @@ html {
     max-width: 100vw;
     overflow-x: hidden;
 }
-
+.navbar-brand {
+    padding: 15px 30px !important; }
+.navbar-toggle {
+    transition: all .3s cubic-bezier(0, 0.5, 0.5, 1); }
+.navbar-toggle:not(.collapsed) {
+    transform: rotate(90deg);
+}
+.navbar-nav .open .dropdown-menu>li>a {
+    line-height: 30px; }
 #Slider.home {
     background-position-x: 55% !important; }
 #Slider.about {

@@ -13,8 +13,33 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style media="screen">
+    .loader {
+        z-index: 9999999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        pointer-events: none; }
+        .loader .circle {
+            height: 30px;
+            width: 30px;
+            border: 3px solid #7befef;
+            border-top-color: #26bfbf;
+            border-radius: 100%;
+            margin: auto;
+            opacity: .7;
+            animation: spin .3s infinite linear; }
+            @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
 </head>
 <body>
+    <div class="loader">
+        <div class="circle"></div>
+    </div>
     <div class="page-wrap">
         <header>
             <nav class="navbar navbar-default">
@@ -35,22 +60,21 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="service-botox.html">Botox</a></li>
-                                    <li><a href="service-chemical-peels.html">Chemical Peels</a></li>
-                                    <li><a href="service-dermal-fillers.html">Dermal Fillers</a></li>
-                                    <li><a href="service-dermaplaning.html">Dermaplaning</a></li>
-                                    <li><a href="service-eyelash-extensions.html">Eyerlash Extensions</a></li>
-                                    <li><a href="service-kybella.html">Kybella</a></li>
-                                    <li><a href="service-laser-hair-removal.html">Laser Hair Removal</a></li>
-                                    <li><a href="service-makeup.html">Makeup</a></li>
-                                    <li><a href="service-microdermabrasion.html">Microdermabrasion</a></li>
-                                    <li><a href="service-microneedling.html">Microneedling</a></li>
                                     <li><a href="service-photofacial.html">Photofacial</a></li>
                                     <li><a href="service-skin-resurfacing.html">Skin Resurfacing</a></li>
+                                    <li><a href="service-laser-hair-removal.html">Laser Hair Removal</a></li>
+                                    <li><a href="service-microneedling.html">Microneedling</a></li>
+                                    <li><a href="service-dermaplaning.html">Dermaplaning</a></li>
+                                    <li><a href="service-microdermabrasion.html">Microdermabrasion</a></li>
+                                    <li><a href="service-dermasound-elite.html">DermaSound Elite</a></li>
+                                    <li><a href="service-makeup.html">Makeup</a></li>
+                                    <li><a href="service-dermal-fillers.html">Dermal Fillers</a></li>
+                                    <li><a href="service-chemical-peels.html">Chemical Peels</a></li>
+                                    <li><a href="service-kybella.html">Kybella</a></li>
                                 </ul>
                             </li>
                             <li><a href="blog.php">Blog</a></li>
-                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -142,7 +166,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-
+                            <div id="map" style="width: 100%; height: 400px">maps error</div>
                         </div>
                         <div class="col-md-6">
                             <form class="contact-form" action="" method="post">
@@ -185,14 +209,11 @@
                         <img src="img/logo.png">
                     </div>
                     <ul class="col-md-6 text-right">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="face.php">Face</a></li>
-                        <li><a href="beauty.php">Beauty</a></li>
-                        <li><a href="body.php">Body</a></li>
-                        <li><a href="medical.php">Medical</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Services</a></li>
                         <li><a href="blog.php">Blog</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="row footer-bottom">
@@ -200,9 +221,9 @@
                         <p class="copyright">All right reserved, Spa Md Copyright 2017</p>
                     </div>
                     <ul class="col-md-6 text-right">
-                        <li><a href="#"><img src="img/instagram.png"></a></li>
-                        <li><a href="#"><img src="img/twitter.png"></a></li>
-                        <li><a href="#"><img src="img/facebook.png"></a></li>
+                        <li><a href="https://twitter.com/SpaMDConsultant"><img src="img/twitter.png"></a></li>
+                        <li><a href="https://www.pinterest.com/spaconsultantsmd/"><img src="img/pinterest.png"></a></li>
+                        <li><a href="https://www.facebook.com/spaconsultantsmd/?ref=bookmarks"><img src="img/facebook.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -223,6 +244,7 @@
     <!-- JScripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/cocoen.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk80Gxfm4MzzpMlQCFkyo6LILac9_9zYI&callback=initMap" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
 </body>
